@@ -697,7 +697,11 @@ body{
 
         font-size:2rem;
     }
+       .games-grid{
+    grid-template-columns:repeat(2, 1fr);
 }
+}
+
 
 /* =====================================
    LABORATÓRIO SCRATCH
