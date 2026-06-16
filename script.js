@@ -593,3 +593,11 @@ searchInput.addEventListener("input", function(){
     });
 
 });
+const themeBtn =
+document.getElementById("themeToggle");
+
+themeBtn.addEventListener("click", ()=>{
+
+    document.body.classList.toggle("dark-mode");
+
+});
