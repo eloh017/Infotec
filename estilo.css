@@ -189,6 +189,9 @@ body{
 
     transition:var(--transition);
 }
+body.dark-mode .btn-primary {
+    background:#8b5cf6;
+}
 
 .btn-primary:hover{
 
@@ -213,10 +216,19 @@ body{
 
     transition:var(--transition);
 }
+body.dark-mode .hero-buttons .btn-secondary{
+    background:transparent;
+    border:2px solid #8b5cf6;
+    color:#8b5cf6;
+}
 
 .btn-secondary:hover{
 
     background:var(--blue);
+    color:white;
+}
+body.dark-mode .hero-buttons .btn-secondary:hover{
+    background:#8b5cf6;
     color:white;
 }
 
@@ -324,6 +336,9 @@ body{
 
     min-height:80px;
 }
+body.dark-mode .game-card h3{
+    color:#f5f5f5;
+}
 
 .game-card button{
 
@@ -347,6 +362,9 @@ body{
 
     transition:var(--transition);
 }
+body.dark-mode .game-card .button{
+    background:#8b5cf6;
+}
 
 .game-card button:hover{
 
@@ -362,6 +380,9 @@ body{
     padding:100px 8%;
 
     background:white;
+}
+body.dark-mode .lab-section{
+    background:#2b2b2b;
 }
 
 .scratch-container{
@@ -437,6 +458,9 @@ body{
 
     text-align:center;
 }
+body.dark-mode .about-card{
+    background:#3a3a3a;
+}
 
 .about-card h3{
 
@@ -444,10 +468,16 @@ body{
 
     margin-bottom:15px;
 }
+body.dark-mode .about-card h3{
+    color:#8b5cf6;
+}
 
 .about-card p{
 
     line-height:1.7;
+}
+body.dark-mode .about-card p{
+    color:#e0e0e0;
 }
 
 /* =========================
@@ -1167,9 +1197,16 @@ body{
 
     box-shadow:0 4px 15px rgba(0,0,0,.1);
 }
-.dark-mode{
-    background:#1f1f1f;
-    color:#f0f0f0;
+body.dark-mode{
+       background:#2b2b2b;
+    color:#f5f5f5;
+}
+body.dark-mode h1,
+body.dark-mode h2{
+    color:#f5f5f5;
+}
+body.dark-mode p{
+    color:#d0d0d0;
 }
 .dark-mode .hero{
     background:#1f1f1f;
@@ -1185,4 +1222,51 @@ body{
 
 .dark-mode .feature-card{
     background:#2d2d2d;
+}
+body.dark-mode .team-card{
+    background:#3a3a3a;
+}
+
+body.dark-mode .team-card p{
+    color:#e0e0e0;
+}
+body.dark-mode .team-card h3{
+    color:#8b5cf6;
+}
+#themeToggle{
+    width:60px;
+    height:32px;
+
+    border:none;
+    border-radius:30px;
+
+    background:#444;
+
+    cursor:pointer;
+
+    position:relative;
+}
+#themeToggle::before{
+    content:"";
+
+    position:absolute;
+
+    width:24px;
+    height:24px;
+
+    border-radius:50%;
+
+    background:white;
+
+    top:4px;
+    left:4px;
+
+    transition:.3s;
+}
+body.dark-mode #themeToggle{
+    background:#8b5cf6;
+}
+
+body.dark-mode #themeToggle::before{
+    transform:translateX(28px);
 }
