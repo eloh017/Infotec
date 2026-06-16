@@ -566,3 +566,30 @@ function sleep(ms) {
     );
 
 }
+const searchInput =
+document.getElementById("gameSearch");
+
+searchInput.addEventListener("input", function(){
+
+    const value =
+    this.value.toLowerCase();
+
+    const cards =
+    document.querySelectorAll(".game-card");
+
+    cards.forEach(card=>{
+
+        const title =
+        card.querySelector("h3")
+        .textContent
+        .toLowerCase();
+
+        if(title.includes(value)){
+            card.style.display="block";
+        }else{
+            card.style.display="none";
+        }
+
+    });
+
+});
