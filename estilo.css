@@ -1148,3 +1148,22 @@ body{
     text-decoration:none;
     text-align:center;
 }
+.search-container{
+    display:flex;
+    justify-content:center;
+    margin:40px 0;
+}
+
+#gameSearch{
+    width:100%;
+    max-width:500px;
+
+    padding:15px 20px;
+
+    border:none;
+    border-radius:50px;
+
+    font-size:1rem;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
