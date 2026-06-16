@@ -1167,3 +1167,22 @@ body{
 
     box-shadow:0 4px 15px rgba(0,0,0,.1);
 }
+.dark-mode{
+    background:#1f1f1f;
+    color:#f0f0f0;
+}
+.dark-mode .hero{
+    background:#1f1f1f;
+}
+
+.dark-mode .section-title h2{
+    color:#f0f0f0;
+}
+
+.dark-mode .game-card{
+    background:#2d2d2d;
+}
+
+.dark-mode .feature-card{
+    background:#2d2d2d;
+}
