@@ -362,7 +362,7 @@ body.dark-mode .game-card h3{
 
     transition:var(--transition);
 }
-body.dark-mode .game-card .button{
+body.dark-mode .game-card button{
     background:#8b5cf6;
 }
 
@@ -1209,7 +1209,7 @@ body.dark-mode p{
     color:#d0d0d0;
 }
 .dark-mode .hero{
-    background:#1f1f1f;
+    background:#2b2b2b;
 }
 
 .dark-mode .section-title h2{
